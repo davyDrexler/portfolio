@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: 100vh;
+}
+
+/* Styles pour la section présentation */
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.presentation .top-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.presentation .top-title .round {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.presentation h1, .presentation h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.presentation h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.presentation h2 {
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: normal;
+    margin-top: 1%;
+}
+
+.presentation p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.presentation .github-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.presentation .github-button:hover {
+    background-color: #555;
+}
+
+.etude {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 70px;
+}
+
+.etude h2 {
+    margin-bottom: 10px;
+}
+
+.etude ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.etude li {
+    margin-bottom: 15px;
+}
+
+.diplo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Section Contact */
+.contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .contact-section p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .contact-section .contact-email {
+    color: #4CAF50; /* Couleur du lien */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-section .contact-email:hover {
+    text-decoration: underline;
+  }
+  
