@@ -1,12 +1,47 @@
+/* Styles par défaut pour les écrans plus grands que 700px */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
     height: 100vh;
+    overflow-x: hidden;
 }
 
-/* Styles pour la section présentation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header .language-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.header .language-selector button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header .language-selector button:hover {
+    background-color: #45a049;
+}
+
 .presentation {
     display: flex;
     flex-direction: column;
@@ -16,6 +51,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 150px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .presentation .top-title {
@@ -30,11 +67,13 @@ body {
     background-color: #4CAF50;
     border-radius: 50%;
     margin-right: 20px;
+    object-fit: cover;
 }
 
 .presentation h1, .presentation h2 {
     margin: 0;
     padding: 10px;
+    word-wrap: break-word;
 }
 
 .presentation h1 {
@@ -56,6 +95,7 @@ body {
     margin-top: 20px;
     max-width: 800px;
     line-height: 1.6;
+    word-wrap: break-word;
 }
 
 .presentation .github-button {
@@ -83,7 +123,15 @@ body {
 }
 
 .etude h2 {
-    margin-bottom: 10px;
+    width: 190px;
+    margin-bottom: 40px;
+    border-width: 5px;
+    border-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: #4CAF50;
+    padding-bottom: 5px;
 }
 
 .etude ul {
@@ -104,7 +152,73 @@ a {
     text-decoration: none;
 }
 
-/* Section Contact */
+/* Styles pour la section Mes Compétences */
+.skills-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio h2 {
+    margin-left: 20px;
+    color: #333;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .contact-section {
     background-color: #000;
     color: #fff;
@@ -112,25 +226,105 @@ a {
     margin-top: 30px;
     text-align: center;
     border-radius: 8px;
-  }
-  
-  .contact-section h2 {
+}
+
+.contact-section h2 {
     margin-bottom: 20px;
     font-size: 2rem;
-  }
-  
-  .contact-section p {
+}
+
+.contact-section p {
     font-size: 1.2rem;
     margin: 0;
-  }
-  
-  .contact-section .contact-email {
-    color: #4CAF50; /* Couleur du lien */
+}
+
+.contact-section .contact-email {
+    color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .contact-section .contact-email:hover {
+}
+
+.contact-section .contact-email:hover {
     text-decoration: underline;
-  }
-  
+}
+
+@media (max-width: 700px) {
+    .presentation {
+        padding: 10px;
+        padding-top: 100px;
+    }
+
+    .presentation .top-title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentation .top-title .round {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .presentation h1 {
+        font-size: 1.8rem;
+    }
+
+    .presentation h2 {
+        font-size: 1.2rem;
+    }
+
+    .presentation p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .github-button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .etude {
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    .etude h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .etude li {
+        font-size: 1rem;
+    }
+
+    .skills-section {
+        padding: 20px;
+    }
+
+    .skills-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .modal {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .carousel-image {
+        height: auto;
+    }
+
+    .contact-section {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}

@@ -1,34 +1,24 @@
-/* Style général */
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  overflow-x: hidden; /* Empêche le défilement horizontal */
-}
-
-/* Style du header */
+/* Styles pour les écrans plus grands que 700px */
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed; /* Position fixe pour les grands écrans */
   padding: 10px 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100%; /* S'assure que le header occupe toute la largeur */
-  max-width: 100%; /* Empêche le dépassement */
-  box-sizing: border-box; /* Empêche les bordures et marges de causer des débordements */
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-/* Section à gauche du header : rond vert + boutons de langue */
-.round-header {
-  width: 50px;
-  height: 50px;
-  background-color: #4CAF50;
+.logo-header {
+  width: 75px;
+  height: auto;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .language-control {
@@ -37,7 +27,7 @@ body, html {
   margin-left: 20px;
 }
 
-.language-control button {
+.language-control-button {
   padding: 5px 10px;
   border: none;
   background-color: #ddd;
@@ -47,7 +37,7 @@ body, html {
   transition: background-color 0.3s ease;
 }
 
-.language-control button:hover {
+.language-control-button:hover {
   background-color: #bbb;
 }
 
@@ -65,5 +55,48 @@ body, html {
 }
 
 .nav-links a:hover {
-  color: rgb(131, 130, 130);
+  color: #4CAF50;
+}
+
+/* Styles pour les écrans de moins de 700px */
+@media (max-width: 700px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative; /* Position relative pour les petits écrans */
+  }
+
+  .logo-header {
+    width: 50px; /* Réduire la taille du logo sur petits écrans */
+  }
+
+  .language-control {
+    display: block; /* Afficher le bouton unique pour sélectionner la langue */
+    margin-top: 10px;
+  }
+
+  .language-control-button {
+    font-size: 0.9rem;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .language-control-button:hover {
+    background-color: #bbb;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Disposer les liens en colonne sur petits écrans */
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 1rem; /* Réduire la taille des liens */
+  }
 }

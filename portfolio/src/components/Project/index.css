@@ -1,10 +1,10 @@
-/* Project.css */
+/* Styles par défaut pour les grands écrans */
 .project-container {
     display: flex;
-    width: 100%;
+    width: 97%;
     background-color: #333;
     color: white;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -44,5 +44,34 @@
   
   .project-details a:hover {
     color: #76ff03;
+  }
+  
+  @media (max-width: 700px) {
+    .project-container {
+      flex-direction: column; /* Disposer les éléments en colonne */
+      width: 100%; /* Utiliser toute la largeur disponible */
+    }
+  
+    .project-image {
+      width: 100%; /* Utiliser toute la largeur disponible */
+      height: auto; /* Ajuster la hauteur automatiquement pour maintenir le ratio */
+      margin: 0; /* Supprimer la marge droite */
+    }
+  
+    .project-details {
+      padding: 15px; /* Réduire le padding pour les petits écrans */
+    }
+  
+    .project-details h3 {
+      font-size: 1.2rem; /* Réduire la taille de la police */
+    }
+  
+    .project-details p {
+      font-size: 0.9rem; /* Réduire la taille de la police */
+    }
+  
+    .project-details a {
+      font-size: 0.9rem; /* Réduire la taille de la police */
+    }
   }
   
