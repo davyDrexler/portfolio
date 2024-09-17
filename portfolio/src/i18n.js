@@ -19,6 +19,9 @@ const resources = {
       "accessibility": "accessibility",
       "accessibility-text": "For a web accessible to everyone.",
       "ContactTitle": "Want to talk about an idea?",
+      "argentbank-txt": "Development of a banking application using React and Redux. Management of user login and data modification.",
+      "724event-txt": "Taught me to work on code that is not my own, to fix and modify it.",
+      "kasa-txt": "Set up a web application with React, managing components and the user interface.",
     }
   },
   fr: {
@@ -38,6 +41,9 @@ const resources = {
       "accessibility": "Accessibilité",
       "accessibility-text": "Pour un web accessible à tous et toutes.",
       "ContactTitle": "Envie de me parler d'une idée ?",
+      "argentbank-txt": "Développement d’une application bancaire en utilisant React et Redux. Gestion de la connexion et des données utilisateur.",
+      "724event-txt": "M’a appris à travailler sur du code qui n’est pas le mien, à le corriger et à le modifier.",
+      "kasa-txt": "Mise en place d’une application web avec React, gestion des composants et de l’interface utilisateur.",
     }
   }
 };

@@ -1,36 +1,18 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './index.css';
 import Project from '../../components/Project/index';
 import SkillCard from '../../components/SkillCard';
 import webdesign from '../../assets/webdesign.webp';
+import eventlogo from '../../assets/eventlogo.png';
+import ab from '../../assets/argentbank.png';
+import kasalogo from '../../assets/kasalogo.png';
 import seo from '../../assets/seo.webp';
 import accessibility from '../../assets/accessibility.webp';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function Home() {
   const { t } = useTranslation();
-
-  const projects = [
-    {
-      title: 'ArgentBank',
-      description: t("Développement d'une application bancaire en utilisant React et Redux"),
-      link: 'https://github.com/davyDrexler/argentBank',
-      images: [
-        'https://via.placeholder.com/800x400?text=Image+1',
-        'https://via.placeholder.com/800x400?text=Image+2',
-        'https://via.placeholder.com/800x400?text=Image+3',
-      ],
-    },
-    {
-      title: '724 EVENT',
-      description: t('Récupération du code et correction.'),
-      link: 'https://github.com/davyDrexler/724event',
-      images: [
-        'https://via.placeholder.com/800x400?text=Image+1',
-        'https://via.placeholder.com/800x400?text=Image+2',
-      ],
-    },
-  ];
 
   return (
     <div>
@@ -71,11 +53,24 @@ function Home() {
 
       <div id="projects" className="portfolio">
         <h2>{t('Projects')}</h2>
-        {projects.map((project, index) => (
-          <div key={index}>
-            <Project title={project.title} description={project.description} image={project.images[0]} />
-          </div>
-        ))}
+        <Project
+          title={t('ArgentBank')}
+          description={t('argentbank-txt')}
+          link="https://github.com/davyDrexler/argentBank"
+          image={ab}
+        />
+        <Project
+          title={t('724Event')}
+          description={t('724event-txt')}
+          link="https://github.com/davyDrexler/724event"
+          image={eventlogo}
+        />
+        <Project
+          title={t('Kasa')}
+          description={t('kasa-txt')}
+          link="https://github.com/davyDrexler/724event"
+          image={kasalogo}
+        />
       </div>
       
       <div id="contact" className="contact-section">
