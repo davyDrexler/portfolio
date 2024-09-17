@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ed14a0a0.css",
-    "main.js": "/portfolio/static/js/main.4ee5f52a.js",
+    "main.css": "/portfolio/static/css/main.37321caf.css",
+    "main.js": "/portfolio/static/js/main.276249e0.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/kasalogo.png": "/portfolio/static/media/kasalogo.5ddb2c36da142a932cdb.png",
     "static/media/accessibility.webp": "/portfolio/static/media/accessibility.1271fe9903911d38bae2.webp",
+    "static/media/eventlogo.png": "/portfolio/static/media/eventlogo.17c9b7e196d76b3da667.png",
+    "static/media/argentbank.png": "/portfolio/static/media/argentbank.683befe65767714598d3.png",
     "static/media/D_logo.webp": "/portfolio/static/media/D_logo.e28f3bc33c623517ece1.webp",
     "static/media/seo.webp": "/portfolio/static/media/seo.ede58e9afa730b8e9bc5.webp",
     "static/media/webdesign.webp": "/portfolio/static/media/webdesign.f14dc61074594c097367.webp",
+    "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.ed14a0a0.css.map": "/portfolio/static/css/main.ed14a0a0.css.map",
-    "main.4ee5f52a.js.map": "/portfolio/static/js/main.4ee5f52a.js.map",
+    "main.37321caf.css.map": "/portfolio/static/css/main.37321caf.css.map",
+    "main.276249e0.js.map": "/portfolio/static/js/main.276249e0.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed14a0a0.css",
-    "static/js/main.4ee5f52a.js"
+    "static/css/main.37321caf.css",
+    "static/js/main.276249e0.js"
   ]
 }
