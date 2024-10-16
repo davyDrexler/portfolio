@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.37321caf.css",
-    "main.js": "/portfolio/static/js/main.276249e0.js",
+    "main.css": "/portfolio/static/css/main.1727fe40.css",
+    "main.js": "/portfolio/static/js/main.940be2f6.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/kasalogo.png": "/portfolio/static/media/kasalogo.5ddb2c36da142a932cdb.png",
     "static/media/accessibility.webp": "/portfolio/static/media/accessibility.1271fe9903911d38bae2.webp",
@@ -15,12 +15,12 @@
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.37321caf.css.map": "/portfolio/static/css/main.37321caf.css.map",
-    "main.276249e0.js.map": "/portfolio/static/js/main.276249e0.js.map",
+    "main.1727fe40.css.map": "/portfolio/static/css/main.1727fe40.css.map",
+    "main.940be2f6.js.map": "/portfolio/static/js/main.940be2f6.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37321caf.css",
-    "static/js/main.276249e0.js"
+    "static/css/main.1727fe40.css",
+    "static/js/main.940be2f6.js"
   ]
 }
