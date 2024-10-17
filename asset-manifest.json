@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1727fe40.css",
-    "main.js": "/portfolio/static/js/main.940be2f6.js",
+    "main.js": "/portfolio/static/js/main.8d8cf857.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/belperf_logo.webp": "/portfolio/static/media/belperf_logo.7b80695a6b32c5e88512.webp",
     "static/media/kasalogo.png": "/portfolio/static/media/kasalogo.5ddb2c36da142a932cdb.png",
     "static/media/accessibility.webp": "/portfolio/static/media/accessibility.1271fe9903911d38bae2.webp",
     "static/media/eventlogo.png": "/portfolio/static/media/eventlogo.17c9b7e196d76b3da667.png",
@@ -16,11 +17,11 @@
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
     "main.1727fe40.css.map": "/portfolio/static/css/main.1727fe40.css.map",
-    "main.940be2f6.js.map": "/portfolio/static/js/main.940be2f6.js.map",
+    "main.8d8cf857.js.map": "/portfolio/static/js/main.8d8cf857.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1727fe40.css",
-    "static/js/main.940be2f6.js"
+    "static/js/main.8d8cf857.js"
   ]
 }
